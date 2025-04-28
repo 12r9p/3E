@@ -1,1 +1,1 @@
-# 3E-zyouhousyori
+# 3E-情報処理
