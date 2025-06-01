@@ -7,10 +7,10 @@ int main(void){
 
     a += 3;
     b *= 4;
-    a -= b;
-    a -= 1;
-    b *= 5;
-    b /= a;
+
+    a -= b + 1;
+
+    b *= 5 / a;
 
     printf("%d, %d\n", a, b);
     
