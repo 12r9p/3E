@@ -2,3 +2,6 @@
 ._*
 .DS_Store
 .Spotlight-V100
+
+# build
+*.dSYM
