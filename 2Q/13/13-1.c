@@ -3,12 +3,17 @@
 int main(void)
 {
     int i, n, sum;
-    int choice;
+    char choice;
 
     sum = 0;
     for (i = 0; i < 10; i++) {
         printf("input integer: ");
-        scanf("%d", &n);
+        if (scanf("%d", &n) != 1) {
+            printf("Invalid input. Please enter an integer.\n");
+            while (getchar() != '\n');
+            i--; // 同じ回数でやり直し
+            continue;
+        }
 
         if (n < 0) {
             continue;
@@ -17,11 +22,21 @@ int main(void)
         sum += n;
 
         if (i == 4) {
-            printf("Do you want to continue to input? (No:0/Yes:other) ");
-            scanf("%d", &choice);
+            printf("Do you want to continue to input? (y/n) ");
+            scanf(" %c", &choice);
 
-            if (choice == 0) {
+            if (choice == 'n') {
                 break;
+            } else if (choice != 'y') {
+                printf("Do you want to continue to input? (y/n) ");
+                scanf(" %c", &choice);
+                while (choice != 'y' && choice != 'n') {
+                    printf("Do you want to continue to input? (y/n) ");
+                    scanf(" %c", &choice);
+                }
+                if (choice == 'n') {
+                    break;
+                }
             }
         }
     }
