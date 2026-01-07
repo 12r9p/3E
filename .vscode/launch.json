@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Current File (CodeLLDB - Integrated)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${fileDirname}/${fileBasenameNoExtension}",
+      "args": [],
+      "cwd": "${fileDirname}",
+      "terminal": "integrated",
+      "preLaunchTask": "C/C++: gcc アクティブなファイルのビルド"
+    },
+    {
+      "name": "Debug Current File (CodeLLDB - External)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${fileDirname}/${fileBasenameNoExtension}",
+      "args": [],
+      "cwd": "${fileDirname}",
+      "terminal": "externalTerminal",
+      "preLaunchTask": "C/C++: gcc アクティブなファイルのビルド"
+    }
+  ]
+}
