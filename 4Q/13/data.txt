@@ -1,0 +1,10 @@
+Maruko 65 77
+Tamae 80 90
+Hanawa 85 100
+Maruo 90 85
+Hamazaki 70 65
+Buhtaro 63 60
+Nagasawa 63 60
+Hujiki 70 70
+Migiwa 80 80
+Yamada 58 72
